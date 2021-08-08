@@ -15,6 +15,12 @@ public class MoveSnake : MonoBehaviour
     public GameObject FeverMouth;
 
     public Text countCrystals_Text;
+
+    private BoxCollider snakeCollide;
+    private void Start()
+    {
+        snakeCollide = GetComponent<BoxCollider>();
+    }
     void FixedUpdate()
     {
         SpeedSnake = Speed;
@@ -22,6 +28,8 @@ public class MoveSnake : MonoBehaviour
         if (SnakeCollision.countCrystals > 3 )
 
         {
+            
+           
             SpeedSnake *= 3;
             transform.position = Vector3.Lerp(new Vector3(0f, 0f, transform.position.z), new Vector3(0f, 0f, transform.position.z) + new Vector3(0f, 0f, 1f), SpeedSnake * Time.deltaTime);
             //transform.position = new Vector3(0f, 0f, transform.position.z);
@@ -33,7 +41,7 @@ public class MoveSnake : MonoBehaviour
 
     private IEnumerator feverMode()
     {
-
+        snakeCollide.enabled = !snakeCollide.enabled;
         FeverMouth.SetActive(true);
         Mouth.SetActive(false);
         yield return new WaitForSeconds(cooldownFever);
@@ -42,6 +50,7 @@ public class MoveSnake : MonoBehaviour
         SpeedSnake = 3f;
         FeverMouth.SetActive(false);
         Mouth.SetActive(true);
+        snakeCollide.enabled = !snakeCollide.enabled;
 
     }
     }
