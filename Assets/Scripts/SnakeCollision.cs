@@ -8,7 +8,7 @@ public class SnakeCollision : MonoBehaviour
 {
     
 
-    int countCrystals = 0;
+    public static int countCrystals = 0;
 
     public Text countCrystals_Text;
     void OnTriggerEnter(Collider collider)
@@ -27,7 +27,8 @@ public class SnakeCollision : MonoBehaviour
             countCrystals++;
             countCrystals_Text.text = "*: " + countCrystals.ToString();
             Destroy(collider.gameObject);
-            if (countCrystals > 3) MoveSnake.SpeedSnake = 15f;
+           
+               
         }
         if (collider.gameObject.name == "MinePrefab(Clone)")
         {

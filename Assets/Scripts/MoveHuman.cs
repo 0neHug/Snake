@@ -29,6 +29,8 @@ public class MoveHuman : MonoBehaviour
 
 
     }
+
+
     void OnTriggerStay(Collider collider)
     {
         if (collider.gameObject.name == "Mouth")
