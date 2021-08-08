@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2615365372570731571}
   - component: {fileID: -447478062859860451}
   - component: {fileID: 2361770360931376102}
-  - component: {fileID: -3088661816190149497}
+  - component: {fileID: -5227267035926323866}
   m_Layer: 0
   m_Name: HumanPrefabFriend
   m_TagString: Untagged
@@ -132,7 +132,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 23883f45f447f6846bf21882d8ed341d, type: 2}
   - {fileID: 2100000, guid: 1eb5a4544d81c954ab2e146c55c90198, type: 2}
   - {fileID: 2100000, guid: 314591f5852df2544a5ff513c925b91b, type: 2}
---- !u!114 &-3088661816190149497
+--- !u!114 &-5227267035926323866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4508978224672476070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c3af46635249c49bc094feae635dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 902288336bd903549a160854cab4bcdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedEat: 6
