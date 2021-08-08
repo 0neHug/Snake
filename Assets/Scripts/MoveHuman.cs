@@ -50,7 +50,6 @@ public class MoveHuman : MonoBehaviour
         {
             isEated = false;
         }
-        }
-    // Update is called once per frame
-   
+    }
+ 
 }

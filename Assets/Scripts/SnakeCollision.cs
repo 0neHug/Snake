@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class SnakeCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
 
     int countCrystals = 0;
 

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpawnObjects : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     public GameObject _minePrefab;
     public GameObject _crystalPrefab;
 
@@ -83,9 +83,4 @@ public class SpawnObjects : MonoBehaviour
         SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 
-        // Update is called once per frame
-        void Update()
-    {
-        
-    }
 }
